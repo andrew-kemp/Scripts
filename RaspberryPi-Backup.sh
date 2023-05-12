@@ -20,6 +20,9 @@ mkdir $Temp_Backup
 # Create Archive with Website data and config files
 tar -cpvzf $Temp_Backup"/"$Today".tar.gz" $Website_Path $Web_Config $Postfix_Config $SASL_Passwd
 
+#Backup the Open VPN Access Server config
+tar -cpvzf $Temp_Backup"/"$Today"-OpenVPN-AS.tar.gz" /usr/local/openvpn_as/etc/db/config.db /usr/local/openvpn_as/etc/db/certs.db /usr/local/openvpn_as/etc/db/userprop.db /usr/local/openvpn_as/etc/db/log.db /usr/local/openvpn_as/etc/as.conf /usr/local/openvpn_as/etc/db/userprop.db
+
 #Backup the Database
 mysqldump $DB_Name > $Temp_Backup"/"$DB_Name"-"$Today".sql"
 

@@ -4,7 +4,7 @@
 #Version 1.0
 
 #Variables
-Azure_Blob="https://andykempstorage.blob.core.windows.net/pibackup?sp=rwl&st=2023-05-11T08:09:39Z&se=2024-05-08T16:09:3>
+Azure_Blob="https://andykempstorage.blob.core.windows.net/pibackup?sp=rwl&st=2023-05-11T08:09:39Z&se=2024-05-08T16:09:39Z&spr=https&sv=2022-11-02&sr=c&sig=h8uf4LYgm3t2WH9%2FFRB0PB7qN7jnbosHik6o5nrpl2s%3D"
 Today=$(date +%A)
 Web_Config="/etc/apache2/sites-available/www.andrewkemp.co.uk.conf"
 DB_Name="db_andrewkemp"
